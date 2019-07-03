@@ -5,9 +5,10 @@ const fs = require('fs')
 
 const port = process.env.PORT || 3000
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  database: 'testes_server',
+  host: 'mysql669.umbler.com',
+  user: 'teste_server',
+  database: 'teste_server',
+  password: 'TesteDevPleno',
   multipleStatements: true
 })
 connection.connect(err => {
