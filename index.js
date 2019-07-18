@@ -11,6 +11,7 @@ const port = process.env.PORT || 3000
   password: '94c84c05',
   multipleStatements: true
 })*/
+console.log(process.env.CLEARDB_DATABASE_URL)
 const connection = mysql.createConnection(process.env.CLEARDB_DATABASE_URL)
 
 connection.connect(err => {
