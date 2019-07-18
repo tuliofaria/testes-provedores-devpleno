@@ -4,13 +4,14 @@ const mysql = require('mysql2')
 const fs = require('fs')
 
 const port = process.env.PORT || 3000
-const connection = mysql.createConnection({
+/*const connection = mysql.createConnection({
   host: 'us-cdbr-east.cleardb.com',
   user: 'b4a233a820586a',
   database: 'heroku_7b047b086f614a8',
   password: '94c84c05',
   multipleStatements: true
-})
+})*/
+const connection = mysql.createConnection(process.env.CLEARDB_DATABASE_URL)
 
 connection.connect(err => {
   if (!err) {
