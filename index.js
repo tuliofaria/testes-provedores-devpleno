@@ -5,12 +5,13 @@ const fs = require('fs')
 
 const port = process.env.PORT || 3000
 const connection = mysql.createConnection({
-  host: 'mysql669.umbler.com',
-  user: 'teste_server',
-  database: 'teste_server',
-  password: 'TesteDevPleno',
+  host: 'us-cdbr-east.cleardb.com',
+  user: 'b4a233a820586a',
+  database: 'heroku_7b047b086f614a8',
+  password: '94c84c05',
   multipleStatements: true
 })
+
 connection.connect(err => {
   if (!err) {
     console.log('connected to db.')
